@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import BackgroundPattern from "@/components/BackgroundPattern";
 import FollowCursorGlow from "@/components/FollowCursorGlow";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
@@ -56,6 +57,7 @@ export default function RootLayout({
         </div>
         <Footer />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
